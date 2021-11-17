@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Flickr</string>
+    <string name="empty_search">Please enter something to search for!</string>
+    <string name="not_found">No results found for </string>
+    <string name="connection_error">Connection Error! Try again.</string>
+    <string name="permission_denied">Permission Denied! Cannot save to Gallery.</string>
+    <string name="show_more">More</string>
+    <string name="history">History</string>
+    <string name="search_flickr">Search for anything on the Flickr directory!</string>
+    <string name="purpose">Made by Venkat Chowdhary</string>
+    <string name="click_history">Click on something to search for it again...</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+    <string name="wrong">Something went wrong!</string>
+    <string name="no_network">No Network Detected</string>
+    <string name="no_network_message">Unable to detect network connection. Please connect to a network.</string>
+    <string name="same_search">Already displaying results for </string>
+</resources>

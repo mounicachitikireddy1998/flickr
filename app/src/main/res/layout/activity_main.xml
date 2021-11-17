@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/flickrDGray"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/purpose"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/startup"
+            android:layout_margin="1dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:textSize="12sp"
+            android:text="@string/purpose"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/purpose"
+        android:layout_width="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_height="0.5dp"
+        android:background="@color/flickrBlue"/>
+
+    <RelativeLayout
+        android:id="@+id/topLinear"
+        android:layout_below="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/searchButton"
+            android:layout_height="wrap_content"
+            android:hint="search"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionSearch"/>
+
+        <ImageButton
+            android:layout_alignParentEnd="true"
+            android:id="@+id/searchButton"
+            android:src="@drawable/mag"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_below="@id/topLinear"
+        android:layout_above="@+id/bottomRelative"
+        android:background="@color/flickrPink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomRelative"
+        android:background="@color/flickrBlue"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:id="@+id/historyButton"
+            android:layout_width="wrap_content"
+            android:paddingBottom="4dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:orientation="vertical">
+            <ImageView
+                style="@style/imageElements"
+                android:src="@drawable/history2"/>
+
+            <TextView
+                style="@style/textElements"
+                android:text="@string/history"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moreButton"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:paddingBottom="4dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/moreImage"
+                style="@style/imageElements"/>
+
+            <TextView
+                android:id="@+id/moreText"
+                style="@style/textElements"
+                android:text="@string/show_more"/>
+        </LinearLayout>
+
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/moreButton"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:layout_marginEnd="10dp"-->
+        <!--android:layout_width="35dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+        <!--/>-->
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:indeterminateTint="@color/flickrBlue"
+        android:padding="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
