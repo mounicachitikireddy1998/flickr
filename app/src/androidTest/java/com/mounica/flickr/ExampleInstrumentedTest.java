@@ -1,4 +1,4 @@
-package com.venkat.flickr;
+package com.mounica.flickr;
 
 import android.content.Context;
 
